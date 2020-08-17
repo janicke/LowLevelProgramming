@@ -5,7 +5,7 @@
 #include <string.h> //strlen()
 #include "mystddef.h"
 #include "mystring.h"
-
+//Program that returns the length of string, using function mystrlen(char*) defined in mystring.h
 int main (int argc, char** argv){
     char string[]= "vier";
 
