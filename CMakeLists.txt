@@ -3,4 +3,4 @@ project(LowLevelProgramming C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(LowLevelProgramming main.c)
+add_executable(LowLevelProgramming my-simple-shell/main.c)
