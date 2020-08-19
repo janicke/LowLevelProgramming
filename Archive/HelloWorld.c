@@ -1,5 +1,5 @@
 //
-// Created by ks on 16.08.20.
+// Created by janicke on 16.08.20.
 //
 
 #include <stdio.h>

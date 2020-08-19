@@ -9,8 +9,9 @@
 #include "mystring.h"
 
 int main (int argc, char** argv){
-    char string[]= "vier";
+    char src[7]= "lalala";
+    char dest[16]="mimimi";
+    dest[0]=mystrcat(dest, src);
 
-    size_t length= mystrlen(string);
-    printf ("Die Länge ist: %lu \n",length);
+    printf ("Das Original ist: %s \nDie Kopie ist: %s ",src,dest);
 }
