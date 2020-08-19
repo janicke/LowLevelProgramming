@@ -82,6 +82,13 @@ void *mymemcpy(void *dest, const void *src, size_t n){
     return dest;
 }
 
-
+//function that overwrites n byte from buf with given value
+void* mymemset(void* buf, int ch, size_t n){
+    char* b=buf;
+    while(n--){
+        *b++=((char)ch);
+    }
+    return buf;
+}
 
 #endif //LOWLEVELPROGRAMMING_MYSTRING_H

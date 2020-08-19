@@ -9,10 +9,11 @@
 #include "mystring.h"
 
 int main (int argc, char** argv){
-    char a[7]= "aaa";
-    char b[7]="bbb";
+    char a[7]="aaaaaa";
+    char b[7]="bbbbbb";
     int i=mystrcmp(a,b);
+    char *buf=&a[2];
     mymemcpy(a,b,2);
-
-    printf ("Das Original ist: %d\n%s\n%s", i,a,b);
+    mymemset(buf,'0',2);
+    printf ("Das Original ist: %d\n%s\n%s\n", i,a,b);
 }
