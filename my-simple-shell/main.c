@@ -9,9 +9,10 @@
 #include "mystring.h"
 
 int main (int argc, char** argv){
-    char src[7]= "lalala";
-    char dest[16]="mimimi";
-    dest[0]=mystrcat(dest, src);
+    char a[7]= "aaa";
+    char b[7]="bbb";
+    int i=mystrcmp(a,b);
+    mymemcpy(a,b,2);
 
-    printf ("Das Original ist: %s \nDie Kopie ist: %s ",src,dest);
+    printf ("Das Original ist: %d\n%s\n%s", i,a,b);
 }

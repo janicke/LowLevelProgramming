@@ -54,5 +54,34 @@ char *mystrcat(char *dest, const char *src){
     return tmp;
 }
 
+//compares strings according to lexicographical order. returns 1 if s1>s2; returns -1 if s1>s2; returns 0 if s1==s2
+int mystrcmp(const char* s1, const char* s2){
+    size_t i=0;
+    while (s1[i]!='\0' && s2[i]!='\0'){
+        if (s1[i]<s2[i])
+            return -1;
+        if (s1[i]>s2[i])
+            return 1;
+        i++;
+
+    }
+    if(s1[i]!='\0')
+        return -1;
+    if (s2[i]!='\0')
+        return 1;
+    return 0;
+}
+
+//function that copies n bytes from src to dest
+void *mymemcpy(void *dest, const void *src, size_t n){
+    size_t i;
+    char* d=dest;
+    char* s=src;
+    for (i=0;i<=n-1; i++){
+        d[i]=s[i];}
+    return dest;
+}
+
+
 
 #endif //LOWLEVELPROGRAMMING_MYSTRING_H
